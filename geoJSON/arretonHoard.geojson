@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 1, "properties": { "taskID": 7998, "imageURL": "http:\/\/farm6.staticflickr.com\/5595\/14118602147_c1feaa2487_b.jpg", "lat": 50.682100, "lon": -1.244400 }, "geometry": { "type": "Point", "coordinates": [ -1.2444, 50.6821 ] } },
+{ "type": "Feature", "id": 2, "properties": { "taskID": 7999, "imageURL": "http:\/\/farm4.staticflickr.com\/3800\/14118602187_730050a6ab_b.jpg", "lat": 50.674300, "lon": -1.248400 }, "geometry": { "type": "Point", "coordinates": [ -1.2484, 50.6743 ] } },
+{ "type": "Feature", "id": 3, "properties": { "taskID": 8000, "imageURL": "http:\/\/farm3.staticflickr.com\/2899\/14281998356_0bfb65a5f1_b.jpg", "lat": 50.679600, "lon": -1.235100 }, "geometry": { "type": "Point", "coordinates": [ -1.2351, 50.6796 ] } },
+{ "type": "Feature", "id": 4, "properties": { "taskID": 8001, "imageURL": "http:\/\/farm4.staticflickr.com\/3679\/14118458189_ed7269c776_b.jpg", "lat": 50.679700, "lon": -1.235300 }, "geometry": { "type": "Point", "coordinates": [ -1.2353, 50.6797 ] } },
+{ "type": "Feature", "id": 5, "properties": { "taskID": 8002, "imageURL": "http:\/\/farm4.staticflickr.com\/3738\/14118458279_8562bb16da_b.jpg", "lat": 50.679700, "lon": -1.234800 }, "geometry": { "type": "Point", "coordinates": [ -1.2348, 50.6797 ] } },
+{ "type": "Feature", "id": 6, "properties": { "taskID": 8003, "imageURL": "http:\/\/farm4.staticflickr.com\/3770\/14325322713_d6192aa7bc_b.jpg", "lat": 50.680000, "lon": -1.234700 }, "geometry": { "type": "Point", "coordinates": [ -1.2347, 50.68 ] } },
+{ "type": "Feature", "id": 7, "properties": { "taskID": 8004, "imageURL": "http:\/\/farm4.staticflickr.com\/3779\/14118457839_1f7995b6ea_b.jpg", "lat": 50.675700, "lon": -1.239900 }, "geometry": { "type": "Point", "coordinates": [ -1.2399, 50.6757 ] } },
+{ "type": "Feature", "id": 8, "properties": { "taskID": 8005, "imageURL": "http:\/\/farm4.staticflickr.com\/3748\/14118601647_b5c2470145_b.jpg", "lat": 50.679900, "lon": -1.234800 }, "geometry": { "type": "Point", "coordinates": [ -1.2348, 50.6799 ] } },
+{ "type": "Feature", "id": 9, "properties": { "taskID": 8006, "imageURL": "http:\/\/farm3.staticflickr.com\/2908\/14325322273_cc705f710c_b.jpg", "lat": 50.701900, "lon": -1.218000 }, "geometry": { "type": "Point", "coordinates": [ -1.218, 50.7019 ] } },
+{ "type": "Feature", "id": 10, "properties": { "taskID": 8007, "imageURL": "http:\/\/farm3.staticflickr.com\/2903\/14118513050_571f04486b_b.jpg", "lat": 50.701900, "lon": -1.218000 }, "geometry": { "type": "Point", "coordinates": [ -1.218, 50.7019 ] } },
+{ "type": "Feature", "id": 11, "properties": { "taskID": 8008, "imageURL": "http:\/\/farm3.staticflickr.com\/2896\/14301793601_941eefe8c7_b.jpg", "lat": 50.701900, "lon": -1.218000 }, "geometry": { "type": "Point", "coordinates": [ -1.218, 50.7019 ] } },
+{ "type": "Feature", "id": 12, "properties": { "taskID": 8009, "imageURL": "http:\/\/farm4.staticflickr.com\/3715\/14118512630_19a8d9ba90_b.jpg", "lat": 50.701900, "lon": -1.218000 }, "geometry": { "type": "Point", "coordinates": [ -1.218, 50.7019 ] } },
+{ "type": "Feature", "id": 13, "properties": { "taskID": 8010, "imageURL": "http:\/\/farm3.staticflickr.com\/2930\/14118600947_9f8a50e34c_b.jpg", "lat": 50.675700, "lon": -1.239900 }, "geometry": { "type": "Point", "coordinates": [ -1.2399, 50.6757 ] } },
+{ "type": "Feature", "id": 14, "properties": { "taskID": 8011, "imageURL": "http:\/\/farm6.staticflickr.com\/5483\/14301792901_6a568eca7a_b.jpg", "lat": 50.701900, "lon": -1.218000 }, "geometry": { "type": "Point", "coordinates": [ -1.218, 50.7019 ] } },
+{ "type": "Feature", "id": 15, "properties": { "taskID": 8012, "imageURL": "http:\/\/farm4.staticflickr.com\/3692\/14304566134_693fa9aa50_b.jpg", "lat": 50.701900, "lon": -1.218000 }, "geometry": { "type": "Point", "coordinates": [ -1.218, 50.7019 ] } }
+]
+}

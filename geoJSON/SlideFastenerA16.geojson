@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 1, "properties": { "taskID": 11807, "imageURL": "https:\/\/farm4.staticflickr.com\/3924\/15135347421_ca7f0cf915_b.jpg", "lat": 51.314400, "lon": 1.350700 }, "geometry": { "type": "Point", "coordinates": [ 1.3507, 51.3144 ] } },
+{ "type": "Feature", "id": 2, "properties": { "taskID": 11808, "imageURL": "https:\/\/farm6.staticflickr.com\/5551\/14951666410_f7de69ed37_b.jpg", "lat": 52.403600, "lon": -2.884500 }, "geometry": { "type": "Point", "coordinates": [ -2.8845, 52.4036 ] } },
+{ "type": "Feature", "id": 3, "properties": { "taskID": 11809, "imageURL": "https:\/\/farm4.staticflickr.com\/3865\/14951775728_cf91eac3e4_b.jpg", "lat": 52.403600, "lon": -2.884500 }, "geometry": { "type": "Point", "coordinates": [ -2.8845, 52.4036 ] } },
+{ "type": "Feature", "id": 4, "properties": { "taskID": 11810, "imageURL": "https:\/\/farm4.staticflickr.com\/3850\/15115320296_f416300bb9_b.jpg", "lat": 51.491200, "lon": -0.223700 }, "geometry": { "type": "Point", "coordinates": [ -0.2237, 51.4912 ] } },
+{ "type": "Feature", "id": 5, "properties": { "taskID": 11811, "imageURL": "https:\/\/farm6.staticflickr.com\/5563\/14951774397_c02c8af3d9_b.jpg", "lat": 51.336700, "lon": 1.314400 }, "geometry": { "type": "Point", "coordinates": [ 1.3144, 51.3367 ] } },
+{ "type": "Feature", "id": 6, "properties": { "taskID": 11812, "imageURL": "https:\/\/farm4.staticflickr.com\/3856\/15115320016_9772db71cc_b.jpg", "lat": 51.336700, "lon": 1.314400 }, "geometry": { "type": "Point", "coordinates": [ 1.3144, 51.3367 ] } },
+{ "type": "Feature", "id": 7, "properties": { "taskID": 11813, "imageURL": "https:\/\/farm4.staticflickr.com\/3886\/15138316665_5e218e1d85_b.jpg", "lat": 51.336700, "lon": 1.314400 }, "geometry": { "type": "Point", "coordinates": [ 1.3144, 51.3367 ] } },
+{ "type": "Feature", "id": 8, "properties": { "taskID": 11814, "imageURL": "https:\/\/farm4.staticflickr.com\/3870\/14951774207_7522a7e9f9_b.jpg", "lat": 51.336700, "lon": 1.314400 }, "geometry": { "type": "Point", "coordinates": [ 1.3144, 51.3367 ] } },
+{ "type": "Feature", "id": 9, "properties": { "taskID": 11815, "imageURL": "https:\/\/farm4.staticflickr.com\/3877\/15135346471_8dc9c056a8_b.jpg", "lat": 51.336700, "lon": 1.314400 }, "geometry": { "type": "Point", "coordinates": [ 1.3144, 51.3367 ] } }
+]
+}

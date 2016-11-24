@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 1, "properties": { "taskID": 11040, "imageURL": "https:\/\/farm6.staticflickr.com\/5586\/14884612989_6c821e2da8_b.jpg", "lat": 51.852800, "lon": -0.616700 }, "geometry": { "type": "Point", "coordinates": [ -0.6167, 51.8528 ] } },
+{ "type": "Feature", "id": 2, "properties": { "taskID": 11041, "imageURL": "https:\/\/farm6.staticflickr.com\/5564\/15071316355_a5b6146384_b.jpg", "lat": 52.269500, "lon": 0.314400 }, "geometry": { "type": "Point", "coordinates": [ 0.3144, 52.2695 ] } },
+{ "type": "Feature", "id": 7, "properties": { "taskID": 11046, "imageURL": "https:\/\/farm6.staticflickr.com\/5566\/14884612849_f5a4073515_b.jpg", "lat": 51.412300, "lon": -0.300700 }, "geometry": { "type": "Point", "coordinates": [ -0.3007, 51.4123 ] } },
+{ "type": "Feature", "id": 8, "properties": { "taskID": 11047, "imageURL": "https:\/\/farm6.staticflickr.com\/5557\/14884612779_4c8ba4a3c0_b.jpg", "lat": 52.450400, "lon": -0.108500 }, "geometry": { "type": "Point", "coordinates": [ -0.1085, 52.4504 ] } },
+{ "type": "Feature", "id": 9, "properties": { "taskID": 11048, "imageURL": "https:\/\/farm6.staticflickr.com\/5580\/14884670240_2f629f60b6_b.jpg", "lat": 53.913000, "lon": -2.186900 }, "geometry": { "type": "Point", "coordinates": [ -2.1869, 53.913 ] } },
+{ "type": "Feature", "id": 10, "properties": { "taskID": 11049, "imageURL": "https:\/\/farm4.staticflickr.com\/3875\/15048311536_01faa0da10_b.jpg", "lat": 52.621400, "lon": 0.528500 }, "geometry": { "type": "Point", "coordinates": [ 0.5285, 52.6214 ] } },
+{ "type": "Feature", "id": 11, "properties": { "taskID": 11050, "imageURL": "https:\/\/farm6.staticflickr.com\/5596\/15071316045_406d52c0b4_b.jpg", "lat": 50.711200, "lon": -2.441200 }, "geometry": { "type": "Point", "coordinates": [ -2.4412, 50.7112 ] } },
+{ "type": "Feature", "id": 12, "properties": { "taskID": 11051, "imageURL": "https:\/\/farm4.staticflickr.com\/3896\/14884670150_35d5fcb579_b.jpg", "lat": 51.491700, "lon": 0.732200 }, "geometry": { "type": "Point", "coordinates": [ 0.7322, 51.4917 ] } },
+{ "type": "Feature", "id": 13, "properties": { "taskID": 11052, "imageURL": "https:\/\/farm4.staticflickr.com\/3906\/15070954732_55e58953d0_b.jpg", "lat": 51.961700, "lon": 1.351300 }, "geometry": { "type": "Point", "coordinates": [ 1.3513, 51.9617 ] } },
+{ "type": "Feature", "id": 14, "properties": { "taskID": 11053, "imageURL": "https:\/\/farm6.staticflickr.com\/5589\/15048311386_7af436bbf5_b.jpg", "lat": 51.961700, "lon": 1.351300 }, "geometry": { "type": "Point", "coordinates": [ 1.3513, 51.9617 ] } },
+{ "type": "Feature", "id": 15, "properties": { "taskID": 11054, "imageURL": "https:\/\/farm6.staticflickr.com\/5578\/15071315905_15e6f6b9dd_b.jpg", "lat": 52.355500, "lon": -1.174300 }, "geometry": { "type": "Point", "coordinates": [ -1.1743, 52.3555 ] } },
+{ "type": "Feature", "id": 16, "properties": { "taskID": 11055, "imageURL": "https:\/\/farm4.staticflickr.com\/3914\/14884761637_7940853e48_b.jpg", "lat": 51.183300, "lon": -1.716700 }, "geometry": { "type": "Point", "coordinates": [ -1.7167, 51.1833 ] } },
+{ "type": "Feature", "id": 17, "properties": { "taskID": 11056, "imageURL": "https:\/\/farm4.staticflickr.com\/3900\/15070954582_d6a35da212_b.jpg", "lat": 50.920000, "lon": -0.604100 }, "geometry": { "type": "Point", "coordinates": [ -0.6041, 50.92 ] } },
+{ "type": "Feature", "id": 18, "properties": { "taskID": 11057, "imageURL": "https:\/\/farm6.staticflickr.com\/5584\/15048310456_c1a06dff34_b.jpg", "lat": 50.901100, "lon": -0.174700 }, "geometry": { "type": "Point", "coordinates": [ -0.1747, 50.9011 ] } },
+{ "type": "Feature", "id": 19, "properties": { "taskID": 11058, "imageURL": "https:\/\/farm6.staticflickr.com\/5559\/15068287431_8d97204b16_b.jpg", "lat": 51.485000, "lon": -0.627000 }, "geometry": { "type": "Point", "coordinates": [ -0.627, 51.485 ] } },
+{ "type": "Feature", "id": 20, "properties": { "taskID": 11059, "imageURL": "https:\/\/farm4.staticflickr.com\/3859\/14884611049_aeab8f8c4f_b.jpg", "lat": 51.637800, "lon": -0.775200 }, "geometry": { "type": "Point", "coordinates": [ -0.7752, 51.6378 ] } }
+]
+}

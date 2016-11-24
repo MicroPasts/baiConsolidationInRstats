@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 1, "properties": { "taskID": 34224, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16803338765", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 2, "properties": { "taskID": 34225, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16802252982", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 3, "properties": { "taskID": 34226, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16802234101", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 4, "properties": { "taskID": 34227, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16802252612", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 5, "properties": { "taskID": 34228, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16183432263", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 6, "properties": { "taskID": 34229, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16183432483", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 7, "properties": { "taskID": 34230, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16615774478", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 8, "properties": { "taskID": 34231, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16615774308", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 9, "properties": { "taskID": 34232, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16181008494", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 10, "properties": { "taskID": 34233, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16617221869", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 11, "properties": { "taskID": 34234, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16803337815", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 12, "properties": { "taskID": 34235, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16596064227", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 13, "properties": { "taskID": 34236, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16615975740", "lat": 53.235700, "lon": -7.712200 }, "geometry": { "type": "Point", "coordinates": [ -7.7122, 53.2357 ] } },
+{ "type": "Feature", "id": 14, "properties": { "taskID": 34237, "imageURL": "https:\/\/www.flickr.com\/photos\/115096994@N02\/16183431963", "lat": 53.412900, "lon": -8.243900 }, "geometry": { "type": "Point", "coordinates": [ -8.2439, 53.4129 ] } }
+]
+}
