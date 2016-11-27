@@ -37,7 +37,7 @@ projects <- c(
 library(maps)
 library(ggmap)
 library(mapproj)
-for(project in projects[1:1]){
+for(project in projects){
   csvname <- paste0("csv/consolidated/", project, "_cons.csv")
   fileName <- paste0("plots/jpegs/", project, ".jpeg")
   findspots <- read.csv(csvname, header=TRUE)
