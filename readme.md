@@ -11,7 +11,7 @@ at York University. This is part of the process.
 
 This repo contains:
  
-* R Scripts
+* R Scripts (generate plots, thank you list, consolidate data, create graphs)
 * The data archives
 * CSV files of raw and consolidated data
 * GeoJSON files of consolidated data
@@ -28,8 +28,8 @@ Andrew Bevan <a.bevan@ucl.ac.uk>
 
 # Acknowledgements
 
-Chiara Bonacchi, Adi Keinan-Schoonbaert, Jennifer Wexler & Neil Wilkin
+Andrew Bevan, Daniel Pett, Chiara Bonacchi, Adi Keinan-Schoonbaert, Jennifer Wexler & Neil Wilkin
 
 # Thank you
 
-We have an army of amazing contributors. The list of these will be generated in a forthcominb R script and printed here.
+We have an army of 402 amazing [contributors](thankyou.md). 

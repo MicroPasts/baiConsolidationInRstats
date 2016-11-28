@@ -61,8 +61,12 @@ for (project in projects) {
 
 # Bind the data together
 final <- do.call(rbind, peopleTest)
+
 # Choose only one column
 final <- final$fullname
+final <- as.data.frame(final)
+names(final) <- c("Full name")
+final <- unique(final)
 
 # Check and create CSV directories if needed
 if (!file.exists('csv/thankYous')){ dir.create('csv/thankYous') }
@@ -72,7 +76,8 @@ csv <- 'csv/thankYous/baiThankYou.csv'
 write.csv(final, file=csv,row.names=FALSE, na="")
 
 # Now generate the markdown document
-library(rmarkdown)
 markdown <- file('thankyou.md')
-content <- paste(as.character(final), collapse=", ")
+text <- "# Contributors to Transcribing the Bronze Age Index  
+"
+content <- paste0(text,paste(as.character(final$`Full name`), collapse=", "))
 writeLines(content, markdown)
