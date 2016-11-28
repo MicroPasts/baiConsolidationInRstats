@@ -12,10 +12,16 @@ at York University. This is part of the process.
 This repo contains:
  
 * R Scripts (generate plots, thank you list, consolidate data, create graphs)
-* The data archives
-* CSV files of raw and consolidated data
+* The data archives (zip folders from projects)
+* CSV files of raw and consolidated data, thank yous and counts. 
 * GeoJSON files of consolidated data
-* Plot folder - JPEG images of the plots of BAI drawers.
+* Plot folder - JPEG images of the maps of each BAI drawer; PNG graphs of contributions
+
+# Usage
+
+To use these scripts, you will need to install R on your machine. Edit the working directory line in 
+each R script file (all meant to be standalone) and then execute them. They will then create folders for 
+containing the maps, plots, csv, zip files and json (geo and plain). 
 
 # License
 
