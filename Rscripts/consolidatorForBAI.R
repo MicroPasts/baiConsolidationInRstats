@@ -23,22 +23,9 @@ library(jsonlite)
 # Set working directory - OSX 
 setwd("/Users/danielpett/Documents/research/micropasts/analysis/consBAI/") 
 
-# Manually created list of apps. The Pybossa API cannot produce this (I believe)
-
-projects <- c(
-  'DrawerA14','SpearHeadsA2', 'arrowheads','BitandBobsA15',
-  'DubiousBA','drawA10', 'dirkspart2', 'ornamentsA15', 'DrawerA16',
-  'bmswords', 'singleA18', 'devizes', 'flangedAxesA1', 'flangedchiselsA1',
-  'drawerA1', 'ferrulesA2', 'SwordsPt1','SwordsPt2','drawerA5A6',
-  'A8tools','toolsA8', 'drawA9', 'crotals', 'irishGold', 'drawB16',
-  'SwordsPt3', 'drawB8', 'ForeignJewelery', 'ForeignTools', 'IrishAxesPt1',
-  'irishB10', 'IrishSwords', 'ForeignUnprov', 'ForeignSickles',
-  'ForeignSwordsMisc', 'ForeignWeapons', 'IrishDirks', 'IrishDaggers',
-  'IrishPalstavesPt1', 'IrishPalstavesPt2', 'IrishAxesPt2', 'irishB15',
-  'BitsandBobsPt1', 'BitsandBobsPt2', 'miscellaneous', 'riverThames',
-  'SlideFastenerA16', 'ThamesSwords', 'arretonHoard', 'OxfordBAI',
-  'selborne', 'IrishAxesB5'
-)
+# Read config file for project list
+projects <- read.csv('admin/config.csv', sep=',')
+projects <- projects$Projects
 
 baseSchema <- c(
   "info", "user_id", "task_id", "created", "finish_time",
