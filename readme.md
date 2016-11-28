@@ -32,4 +32,5 @@ Andrew Bevan, Daniel Pett, Chiara Bonacchi, Adi Keinan-Schoonbaert, Jennifer Wex
 
 # Thank you
 
-We have an army of 402 amazing [contributors](thankyou.md). 
+We have an army of 402 amazing [contributors](thankyou.md) who identified themselves. (Anonymous contributor 
+count to be worked out.)

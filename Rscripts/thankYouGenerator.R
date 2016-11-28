@@ -45,7 +45,7 @@ names(userTable) <- c("userID", "fullname")
 # Create list for rbind to use
 peopleTest = list()
 
-# Loop through projects
+# Loop through projects - uses raw data to get all contributors
 for (project in projects) {
    csvName <- paste0("csv/raw/", project, "_raw.csv")
    data <- read.csv(csvName, header=TRUE)
