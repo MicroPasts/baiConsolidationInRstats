@@ -11,7 +11,7 @@ at York University. This is part of the process.
 
 This repo contains:
  
-* R Scripts (generate plots, thank you list, consolidate data, create graphs)
+* R Scripts (generate plots, thank you list, consolidate data, merge data, extract Flickr data, create graphs)
 * The data archives (zip folders from projects)
 * CSV files of raw and consolidated data, thank yous and counts. 
 * GeoJSON files of consolidated data
@@ -30,6 +30,7 @@ The scripts are under MIT. These data and maps are CC-BY.
 # Authors
 
 Daniel Pett <dpett@britishmuseum.org>
+
 Andrew Bevan <a.bevan@ucl.ac.uk>
 
 # Acknowledgements
