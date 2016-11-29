@@ -30,8 +30,7 @@ finalData <- do.call("rbind", lapply(files, read.csv, header = TRUE))
 write.csv(finalData, file='../master/merged.csv',row.names=FALSE, na="")
 
 # Write out list of Flickr images
-flickr <- finalData$flickr
-names(flickr) <- c("flickrUrl")
+flickr <- finalData[c("flickrURL", "project")]
 write.csv(flickr, file='../master/flickrUrls.csv',row.names=FALSE, na="")
 
 # Check if rows before and after match
