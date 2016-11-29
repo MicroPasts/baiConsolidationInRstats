@@ -1,7 +1,7 @@
 # Consolidation of the @britishmuseum Bronze Age Index 
 
 This repo contains R scripts for consolidation of the British Museum's Bronze Age Index. 
-These data were created through the efforts of our amazing crowd sourcing volunteers using the 
+These data were created through the efforts of our amazing crowdsourcing volunteers using the 
 @micropasts platform. 
 
 During project planning, we committed to depositing these data with
