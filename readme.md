@@ -4,8 +4,8 @@ This repo contains R scripts for consolidation of the British Museum's Bronze Ag
 These data were created through the efforts of our amazing crowd sourcing volunteers using the 
 @micropasts platform. 
 
-During the project planning, we committed to depositing these data with the Archaeology Data Service
-at York University. This is part of the process.
+During project planning, we committed to depositing these data with
+the UK Archaeology Data Service. This is part of that process.
 
 # Contents
 
@@ -25,7 +25,7 @@ containing the maps, plots, csv, zip files and json (geo and plain).
 
 # License
 
-The scripts are under MIT. These data and maps are CC-BY.
+The scripts are under MIT. The data and maps are CC-BY.
 
 # Authors
 
@@ -39,5 +39,5 @@ Andrew Bevan, Daniel Pett, Chiara Bonacchi, Adi Keinan-Schoonbaert, Jennifer Wex
 
 # Thank you
 
-We have an army of 402 amazing [contributors](thankyou.md) who identified themselves. (Anonymous contributor 
-count to be worked out.)
+We have an army of 402 amazing [contributors](thankyou.md) who
+identified themselves, as well as a large host of anonymous contributors.
