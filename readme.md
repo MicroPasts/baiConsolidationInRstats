@@ -35,7 +35,7 @@ Andrew Bevan <a.bevan@ucl.ac.uk>
 
 # Acknowledgements
 
-Andrew Bevan, Daniel Pett, Chiara Bonacchi, Adi Keinan-Schoonbaert, Jennifer Wexler & Neil Wilkin
+Andrew Bevan, Daniel Pett, Chiara Bonacchi, Adi Keinan-Schoonbaert, Jennifer Wexler & Neil Wilkin.
 
 # Thank you
 
