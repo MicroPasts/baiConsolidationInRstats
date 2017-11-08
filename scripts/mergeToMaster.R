@@ -8,7 +8,7 @@
 #' ----
 
 # Set working directory - OSX 
-setwd("/Users/danielpett/Documents/research/micropasts/analysis/consBAI/csv/consolidated")
+setwd("/Users/abevan/Projects/github/baiConsolidationInRstats/csv/consolidated") 
 
 # Create folder for merged files
 if (!file.exists('csv/master')){dir.create('csv/master')}

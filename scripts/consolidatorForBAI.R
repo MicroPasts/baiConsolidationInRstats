@@ -21,19 +21,19 @@ if(length(new.packages)) install.packages(new.packages)
 library(jsonlite)
 
 # Set working directory - OSX 
-setwd("/Users/danielpett/Documents/research/micropasts/analysis/consBAI/") 
+setwd("/Users/abevan/Projects/github/baiConsolidationInRstats/") 
 
 # Read config file for project list
 projects <- read.csv('admin/config.csv', sep=',')
-projects <- projects$Projects
+projects <- as.character(projects$Projects)
 
 baseSchema <- c(
   "info", "user_id", "task_id", "created", "finish_time",
   "calibration", "app_id", "user_ip", "timeout", "id", "weight",
   "patina", "site", "surface", "toSearch", "remarks", "dateDiscoveryMonth",
-  "objectType", "gridRef", "lon", "thickness", "width", "other", 
+  "objectType", "gridRef", "thickness", "width", "other", 
   "composition", "associations", "description", "collection", "dateDiscoveryDay", 
-  "lat", "dateDiscoveryYear", "rightCorner", "length", "edge", "publications",
+  "dateDiscoveryYear", "rightCorner", "length", "edge", "publications",
   "userID", "taskID", "Lon", "Lat" 
 )
 
@@ -51,14 +51,14 @@ if (!file.exists('json')){ dir.create('json') }
 # Load user data
 #http://crowdsourced.micropasts.org/admin/users/export?format=csv (when logged in as admin)
 users <- read.csv("admin/all_users.csv", header=TRUE)
-users <- users[,c("id","fullname","name")]
+users <- users[,c("id","fullname")]
 
 # ID of good users to prioritse or bad ones to ignore
 superusers <- c(433,580,64,226,473,243) # rank order, best first
 ignoreusers <- c(652,677)
 
 # Loop through each project
-for(project in projects){
+for (project in projects){
   # Print name of project processing
   print(paste0("Start processing ", project)) 
   
@@ -67,13 +67,14 @@ for(project in projects){
   tasks <- '/tasks/export?type=task&format=json'
   url <- paste0(baseUrl, project, tasks)
   archives <- paste0('archives/', project, 'Tasks.zip')
-  
-  # Import tasks from json, this method has changed due to coding changes by SciFabric to their code
-  download.file(url,archives)
-  unzip(archives)
   taskPath <- paste0('json/', project,  '.json')
-  rename <- paste0(project,  '_task.json')
-  file.rename(rename, taskPath)
+  # Import tasks from json, this method has changed due to coding changes by SciFabric to their code
+    if (!file.exists(taskPath)){
+        download.file(url,archives)
+        unzip(archives)
+        rename <- paste0(project,  '_task.json')
+        file.rename(rename, taskPath)
+    }
   
   # Read json files
   which(lapply(readLines(taskPath, warn=FALSE), function(x) tryCatch({jsonlite::fromJSON(x); 1}, error=function(e) 0)) == 0)
@@ -86,14 +87,15 @@ for(project in projects){
   
   # Import task runs from json
   taskruns <- '/tasks/export?type=task_run&format=json'
-  urlRuns <- paste0(baseUrl,project,  taskruns)
-  
-  archiveRuns <-paste0('archives/', project,  'TasksRun.zip')
-  download.file(urlRuns,archiveRuns)
-  unzip(archiveRuns)
-  taskruns <- paste0('json/', project,  '_task_run.json')
-  renameRuns <-paste0(project,  '_task_run.json')   
-  file.rename(renameRuns, taskruns)
+    urlRuns <- paste0(baseUrl,project,  taskruns)
+    archiveRuns <-paste0('archives/', project,  'TasksRun.zip')
+            taskruns <- paste0('json/', project,  '_task_run.json')
+    if (!file.exists(taskruns)){
+        download.file(urlRuns,archiveRuns)
+        unzip(archiveRuns)
+        renameRuns <-paste0(project,  '_task_run.json')   
+        file.rename(renameRuns, taskruns)
+    }
   which(lapply(readLines(taskruns, warn=FALSE), function(x) tryCatch({jsonlite::fromJSON(x); 1}, error=function(e) 0)) == 0)
   trTr <- fromJSON(paste(readLines(taskruns, warn=FALSE), collapse=""))
   
@@ -113,12 +115,13 @@ for(project in projects){
   trTr <- cbind(trTr,geo)
 
   # Sort by user ID then by task ID
-  trTr <- trTr[with(trTr, order(taskID, userID)), ]
+    trTr <- trTr[with(trTr, order(taskID, userID)), ]
   
   # Clean up some text issues
   tmp <- names(trTr) #preserve column names
   trTr <- apply(trTr, 2, function(x) gsub("[\r\n]", " [;] ", x))
   trTr <- apply(trTr, 2, function(x) gsub("[;]", ",", x, fixed=TRUE))
+  trTr <- apply(trTr, 2, function(x) gsub("[:]", ",", x, fixed=TRUE))
   trTr <- apply(trTr, 2, function(x) gsub("\\s\\s", " ", x, fixed=TRUE))
   trTr <- apply(trTr, 2, function(x) gsub(" ,", ",", x, fixed=TRUE))
   trTr <- apply(trTr, 2, function(x) gsub("^\\s+|\\s+$", "", x)) #whitespace clean
@@ -138,7 +141,7 @@ for(project in projects){
   
   # Reorder the final columns
   preforder <- c("taskID","userID","objectType","rightCorner","collection","site",
-                 "toSearch","Lat","Lon","gridRef","dateDiscoveryDay",
+                 "toSearch","Lon","Lat","gridRef","dateDiscoveryDay",
                  "dateDiscoveryMonth","dateDiscoveryYear","length","width","edge",
                  "weight","patina","surface","thickness","other","composition",
                  "associations","description","publications","remarks","inputBy",
@@ -157,7 +160,7 @@ for(project in projects){
   
   ## Consolidation steps ##
   trTrc <- as.data.frame(trTr,stringsAsFactors=FALSE)
-  # Get rid of factors in facour of plain text
+  # Get rid of factors in favour of plain text
   i <- sapply(trTrc, is.factor)
   trTrc[i] <- lapply(trTrc[i], as.character)
   
@@ -188,13 +191,12 @@ for(project in projects){
         myrec <- mydup[mydup$userID==sucheck$userID[1] & !is.na(mydup$userID),]
         myrec$Processing <- "superuser"
       } else {
-        myrec <- mydup[1,]
-        myrec[] <- NA  #empty row
-        myrec$taskID <- mydup$taskID[1] #identical
-        myrec$imageURL <- mydup$imageURL[1] #identical
-        mycols <- names(trTrc)
-        
-        myrec$Processing <- "merged"
+          mychars <- vector(mode="numeric", length=nrow(mydup))
+          for (g in 1:nrow(mydup)){
+              mychars[g] <- sum(nchar(mydup[g,names(mydup)[c(3:6,14:26)]]), na.rm=TRUE)
+          }
+          myrec <- mydup[which.max(mychars),]
+          myrec$Processing <- "most detailed record"
       }
     }
     if (a==1){
@@ -203,13 +205,11 @@ for(project in projects){
       allrecs <- rbind(allrecs,myrec)
     }
   }
-  
   # Round lonlat to 4 decimals for consistency and force NA conversion
-  allrecs$lon <- round(as.numeric(allrecs$Lon),4)
-  allrecs$lat <- round(as.numeric(allrecs$Lat),4)
+  allrecs$Lon[!is.na(allrecs$Lon)] <- round(as.numeric(allrecs$Lon[!is.na(allrecs$Lon)]),4)
+  allrecs$Lat[!is.na(allrecs$Lat)] <- round(as.numeric(allrecs$Lat[!is.na(allrecs$Lat)]),4)
   allrecs$project <- project
   # Export consolidated data
-  
   csvname <- paste0('csv/consolidated/', baseFilename,  '_cons.csv')
   write.csv(allrecs, file=csvname,row.names=FALSE, na="")
   print(paste0(baseFilename, " processed")) 
