@@ -18,13 +18,20 @@ files <- list.files()
 
 # Check the number of rows
 total = list()
+myfiles = list()
 for(file in files){
-  cs <- read.csv(file)
-  total[[file]] <- nrow(cs)
+    cs <- read.csv(file, stringsAsFactors=FALSE)
+    total[[file]] <- nrow(cs)
+    myfiles[[file]] <- cs
 }
 
 # Bind the csv files together into a merged file
-finalData <- do.call("rbind", lapply(files, read.csv, header = TRUE))
+finalData <- do.call("rbind", myfiles)
+
+# Remove some problematic coordinates
+toMatch <- c("provenance","ocality", "nknown"," or ")
+finalData[!grepl(paste(toMatch,collapse="|"), finalData$site),"Lon"] <- NA
+finalData[!grepl(paste(toMatch,collapse="|"), finalData$site),"Lat"] <- NA
 
 # Write the final CSV dump
 write.csv(finalData, file='../master/merged.csv',row.names=FALSE, na="")
